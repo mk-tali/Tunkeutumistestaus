@@ -30,7 +30,22 @@ KKO:2003:36
 (Finlex. 2003.)  
 
 ## a) Asenna Kali virtuaalikoneeseen  
-Minulla oli jo Kali asennettuna virtuaalikoneessa. 
+Minulla oli jo Kali asennettuna virtuaalikoneessa. Asensin Kali 2026.3 Virtualboxille.  
+
+## b) Irrota Kali-virtuaalikone verkosta  
+Asensin ohjeiden mukaan HacTheBox VPN:n. Sen avulla sain yhteyden pois verkkoon.  
+<img width="537" height="183" alt="image" src="https://github.com/user-attachments/assets/cb655968-c4f2-4b1b-9f3a-bcbed64c0e02" />  
+<img width="570" height="183" alt="image" src="https://github.com/user-attachments/assets/f31f3e35-77e5-4318-88bf-9c53da281d0c" />  
+
+
+
+## c) Porttiskannaus  
+
+## d) Asenna kaksi vapaavalintaista demonia ja skannaa uudelleen. Analysoi ja selitä erot  
+
+## e) HackTheBox  
+
+
 
 ## Lähteet  
 Finlex. 2003. KKO:2003:36. https://www.finlex.fi/fi/oikeuskaytanto/korkein-oikeus/ennakkopaatokset/2003/36  
