@@ -36,13 +36,18 @@ Minulla oli jo Kali asennettuna virtuaalikoneessa. Asensin Kali 2026.3 Virtualbo
 Asensin ohjeiden mukaan HacTheBox VPN:n. Sen avulla sain yhteyden pois verkkoon.  
 <img width="537" height="183" alt="image" src="https://github.com/user-attachments/assets/cb655968-c4f2-4b1b-9f3a-bcbed64c0e02" />  
 <img width="570" height="183" alt="image" src="https://github.com/user-attachments/assets/f31f3e35-77e5-4318-88bf-9c53da281d0c" />  
-Ajoin komennon `nmap -T4 -A localhost`  
-<img width="833" height="270" alt="image" src="https://github.com/user-attachments/assets/45c2bf3e-76fc-4e6d-9742-dad888a9d182" />  
--T4 Parametri kertoo kuinka nopeasti nmap skannaa, -A on agressiivinen skannaus, ottaa käyttöön käyttöjärjestelmän tunnistuksen, versiontunnistuksen, skriptiskannauksen ja reitityksen jäljityksen. Localhost skannaa vain localhost IP-osoitteen.  
+ 
 
 ## c) Porttiskannaus  
+Ajoin komennon `nmap -T4 -A localhost`  
+-T4 Parametri kertoo kuinka nopeasti nmap skannaa, -A on agressiivinen skannaus, ottaa käyttöön käyttöjärjestelmän tunnistuksen, versiontunnistuksen, skriptiskannauksen ja reitityksen jäljityksen. Localhost skannaa vain localhost IP-osoitteen.  
+<img width="833" height="270" alt="image" src="https://github.com/user-attachments/assets/45c2bf3e-76fc-4e6d-9742-dad888a9d182" />  
+Nmap skannasi 1000 porttia, mutta mikään ei ollut auki. Yksi host löytyi.
 
 ## d) Asenna kaksi vapaavalintaista demonia ja skannaa uudelleen. Analysoi ja selitä erot  
+Asensin vsfptd ja apache2. Ajoin uudestaan nmap.  
+<img width="840" height="529" alt="image" src="https://github.com/user-attachments/assets/0ab08e79-0620-41ac-aa16-958c88d33752" />  
+Nyt kaksi porttia (21/tcp ja 80/tcp) ovat avoinna. Niissä myös näkyy, mikä palvelu niissä on. Nmap myös tunnisti käyttöjärjestelmäksi Unix.  
 
 ## e) HackTheBox  
 
