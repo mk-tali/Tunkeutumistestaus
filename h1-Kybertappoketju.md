@@ -29,6 +29,8 @@ KKO:2003:36
 -A joutui korvaamaan osuuskunnalle 20 000-  ja yhtiölle 55 000 markkaa  
 (Finlex. 2003.)  
 
+## a) Asenna Kali virtuaalikoneeseen  
+Minulla oli jo Kali asennettuna virtuaalikoneessa. 
 
 ## Lähteet  
 Finlex. 2003. KKO:2003:36. https://www.finlex.fi/fi/oikeuskaytanto/korkein-oikeus/ennakkopaatokset/2003/36  
