@@ -50,8 +50,8 @@ Asensin vsfptd ja apache2. Ajoin uudestaan nmap.
 Nyt kaksi porttia (21/tcp ja 80/tcp) ovat avoinna. Niissä myös näkyy, mikä palvelu niissä on. Nmap myös tunnisti käyttöjärjestelmäksi Unix.  
 
 ## e) HackTheBox  
-
-
+Tein HackTheBoxista "Brutus" labran.  
+<img width="734" height="556" alt="image" src="https://github.com/user-attachments/assets/1306a89e-a52f-42cb-8e73-ea05778e5cc5" />  
 
 ## Lähteet  
 Finlex. 2003. KKO:2003:36. https://www.finlex.fi/fi/oikeuskaytanto/korkein-oikeus/ennakkopaatokset/2003/36  
