@@ -34,16 +34,21 @@ Tässä Kali.
 <img width="805" height="259" alt="image" src="https://github.com/user-attachments/assets/bb0b2754-0f45-42e2-ba1f-d96d79ace2e9" />  
 Tässä Metasploite.  
 <img width="726" height="361" alt="image" src="https://github.com/user-attachments/assets/50c0df9f-ac74-4ca0-a089-f20906935114" />  
-
-
-
-
+Kali saa yhteyden internettiin.  
+<img width="517" height="193" alt="image" src="https://github.com/user-attachments/assets/931a6e4a-4019-4fa2-b5ff-8255f00c6671" />  
 
 ## c) Oma virtuaaliverkko  
+Kali ei saa yhteyttä internettiin, mutta saa yhteyden Metasploitableen.  
+<img width="556" height="289" alt="image" src="https://github.com/user-attachments/assets/ec129e4a-6c35-4982-abc1-9d2d31357593" />  
+Metasploitable saa yhteyden Kaliin, mutta ei internettiin.  
+<img width="590" height="228" alt="image" src="https://github.com/user-attachments/assets/be74c930-bc6d-4ce5-b3d7-d890eef1b97f" />  
+
+## d) Porttiskannataan Metasploitable  
+Nmap löysi Metasploitablen.  
+<img width="561" height="172" alt="image" src="https://github.com/user-attachments/assets/f3ebdab8-c7de-4cd2-af25-331deeb6ef63" />  
 
 
-Metasploitable on Host-Only verkossa.  
-<img width="735" height="142" alt="image" src="https://github.com/user-attachments/assets/720ba1a9-b07e-46bb-b118-e3d244a94937" />
+
 
 ## Lähteet  
 Buuri. 2026. DORA and TLPT testing. https://terokarvinen.com/buuri-2026-dora-and-threat-lead-penetration-testing/buuri-2026-dora-and-threat-lead-penetration-testing--teros-pentest-course.pdf  
