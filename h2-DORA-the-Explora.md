@@ -1,1 +1,32 @@
+# h2 DORA the Explora  
+## x) Tiivistelmät  
+DORA and TLPT testing  
+-DORA = Digital Operations Resilience Act. EU:n laajuinen sääntely rahoitusalan häiriönsietokyvyn varmistamiseksi.  
+-Viisi pilaria.  
+-Vaatimukset kahteen testaustapaan.  
+-TIBER-EU = Threat Intelligence-Based Ethical Red Teaming.  
+-Testausprosessissa neljä vaihetta.  
+-Pankkiautomaatteihin hyökätty.  
+-Red teamin hyökkäyspolku, in - through - out.  
+(Buuri 2026)  
+
+DORA  
+-Kun ICT testausta ei ole vaadittu, haavoittuvuudet jäävät huomaamatta.  
+-Ilman unionin puuttumista asiaan, testaus jäisi epäjohdonmukaiseksi.  
+-ICT-palvelut ovat alentaneet rahoituksen välityksen kustannuksia.  
+(European Union 2022)  
+
+TIBER-FI Testing phase.  
+-Kaksi erillistä prosessin osaa.  
+-Erilasia testaus metodeja.  
+-Luodaan realistisia skenaarioita.  
+(Suomen pankki 2025)  
+
+a)Metasploitable
+
+
+## Lähteet  
+Buuri. 2026. DORA and TLPT testing. https://terokarvinen.com/buuri-2026-dora-and-threat-lead-penetration-testing/buuri-2026-dora-and-threat-lead-penetration-testing--teros-pentest-course.pdf  
+European Union. 2022. Regulation on digital operational resilience for the financial sector. Articles 26, 27. https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng  
+Suomen pankki. 2025. TIBER-FI Procedures and Guidelines. 5.4 Testing phase. https://www.suomenpankki.fi/globalassets/bof/en/money-and-payments/the-bank-of-finland-as-catalyst-payments-council/tiber-fi/tiber-fi-2.0-procedures-and-guidelines.pdf  
 
