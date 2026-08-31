@@ -22,8 +22,18 @@ TIBER-FI Testing phase.
 -Luodaan realistisia skenaarioita.  
 (Suomen pankki 2025)  
 
-a)Metasploitable
+## a)Metasploitable
+Asensin Metasploitable 2 Virtualboxille.  
 
+## b) Virtuaaliverkko Kalin ja Metasploitable välillä  
+Kali saa yhteyden verkkoon, ja yhteyden saa pois päältä.  
+<img width="525" height="210" alt="image" src="https://github.com/user-attachments/assets/b354ee95-e733-40cc-ba11-a66a5e78516b" />  
+<img width="621" height="176" alt="image" src="https://github.com/user-attachments/assets/425c7b82-82ed-4508-b097-257fe2b0dcfe" />  
+
+
+
+Metasploitable on Host-Only verkossa.  
+<img width="735" height="142" alt="image" src="https://github.com/user-attachments/assets/720ba1a9-b07e-46bb-b118-e3d244a94937" />
 
 ## Lähteet  
 Buuri. 2026. DORA and TLPT testing. https://terokarvinen.com/buuri-2026-dora-and-threat-lead-penetration-testing/buuri-2026-dora-and-threat-lead-penetration-testing--teros-pentest-course.pdf  
