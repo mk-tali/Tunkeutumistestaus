@@ -28,8 +28,18 @@ Asensin Metasploitable 2 Virtualboxille.
 ## b) Virtuaaliverkko Kalin ja Metasploitable välillä  
 Kali saa yhteyden verkkoon, ja yhteyden saa pois päältä.  
 <img width="525" height="210" alt="image" src="https://github.com/user-attachments/assets/b354ee95-e733-40cc-ba11-a66a5e78516b" />  
-<img width="621" height="176" alt="image" src="https://github.com/user-attachments/assets/425c7b82-82ed-4508-b097-257fe2b0dcfe" />  
+Asetin molemmille koneille ipv4 osoitteet samasta aliverkosta.  
+Tässä Kali.  
+<img width="387" height="43" alt="image" src="https://github.com/user-attachments/assets/1cb23a64-9455-4a78-af56-63fe0a83043d" />  
+<img width="805" height="259" alt="image" src="https://github.com/user-attachments/assets/bb0b2754-0f45-42e2-ba1f-d96d79ace2e9" />  
+Tässä Metasploite.  
+<img width="726" height="361" alt="image" src="https://github.com/user-attachments/assets/50c0df9f-ac74-4ca0-a089-f20906935114" />  
 
+
+
+
+
+## c) Oma virtuaaliverkko  
 
 
 Metasploitable on Host-Only verkossa.  
