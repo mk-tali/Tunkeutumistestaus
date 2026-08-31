@@ -23,7 +23,7 @@ TIBER-FI Testing phase.
 (Suomen pankki 2025)  
 
 ## a)Metasploitable
-Asensin Metasploitable 2 Virtualboxille.  
+Asensin Metasploitable 2 Virtualboxille Rapid 7 sivulta. 
 
 ## b) Virtuaaliverkko Kalin ja Metasploitable välillä  
 Kali saa yhteyden verkkoon, ja yhteyden saa pois päältä.  
@@ -49,12 +49,19 @@ Nmap löysi Metasploitablen.
 <img width="600" height="493" alt="image" src="https://github.com/user-attachments/assets/8d6a3abd-c5aa-4ac7-be51-063e0831468b" />  
 
 ## e) Huolellinen porttiskannaus  
+Ajoin komennon `sudo nmap -A -T4 -p- 192.168.56.20` ja nmap antoi todella kattavan tuloksen. Kysyin Claude.ai:lta mitkä portit olisivat parhaimmat analyysiin ja löysin niistä Rapid7 sivuilta tietoa. Valitsin seuraavat portit.  
+21/tcp vsftpd 2.3.4.  
+<img width="451" height="243" alt="image" src="https://github.com/user-attachments/assets/ca4c2ebb-75d6-4c72-af95-91e74cedf322" />  
+CVE-2011-2523. Vuonna 2011 hyökkääjä sai asennettua tähän takaoven. Tätä kautta sai täyden pääsyn koneeseen ilman salasanaa. (Rapid7. VSFTPD 2.3.4 Backdoor Command Execution)  
 
-
-
+3306/tcp MySQL 5.0.51a-3ubuntu5.  
+<img width="922" height="163" alt="image" src="https://github.com/user-attachments/assets/5deab3e9-b686-4a4f-a239-3376c6b4664d" />  
+Oletettiin, että MySQL käyttäessä `memcmp()` funktiota vertaamaan annettua salasanaa oikeaan, se palauttaisi aina arvon välillä -128 - 127. Tietyillä alustoilla funktio saattoi palauttaa alueen ulkopuolisen arvon, jolloin väärä salasana hyväksyttiin oikeana. (Rapid7. CVE-2012-2122: A Tragically Comedic Security Flaw in MySQL)  
 
 ## Lähteet  
 Buuri. 2026. DORA and TLPT testing. https://terokarvinen.com/buuri-2026-dora-and-threat-lead-penetration-testing/buuri-2026-dora-and-threat-lead-penetration-testing--teros-pentest-course.pdf  
 European Union. 2022. Regulation on digital operational resilience for the financial sector. Articles 26, 27. https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng  
 Suomen pankki. 2025. TIBER-FI Procedures and Guidelines. 5.4 Testing phase. https://www.suomenpankki.fi/globalassets/bof/en/money-and-payments/the-bank-of-finland-as-catalyst-payments-council/tiber-fi/tiber-fi-2.0-procedures-and-guidelines.pdf  
+Rapid7. VSFTPD 2.3.4 Backdoor Command Execution. https://www.rapid7.com/db/modules/exploit/unix/ftp/vsftpd_234_backdoor/  
+Rapid7. CVE-2012-2122: A Tragically Comedic Security Flaw in MySQL. https://www.rapid7.com/blog/post/2012/06/11/cve-2012-2122-a-tragically-comedic-security-flaw-in-mysql/  
 
