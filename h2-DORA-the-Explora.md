@@ -46,6 +46,9 @@ Metasploitable saa yhteyden Kaliin, mutta ei internettiin.
 ## d) Porttiskannataan Metasploitable  
 Nmap löysi Metasploitablen.  
 <img width="561" height="172" alt="image" src="https://github.com/user-attachments/assets/f3ebdab8-c7de-4cd2-af25-331deeb6ef63" />  
+<img width="600" height="493" alt="image" src="https://github.com/user-attachments/assets/8d6a3abd-c5aa-4ac7-be51-063e0831468b" />  
+
+## e) Huolellinen porttiskannaus  
 
 
 
