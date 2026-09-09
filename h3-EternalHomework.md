@@ -30,9 +30,16 @@ Komennolla `services -p 21` saadaan suodatettua vain portti 21.
 Komennolla `services -s http` saa näkyviin molemmat http portit.  
 <img width="778" height="141" alt="image" src="https://github.com/user-attachments/assets/8dc3ba1a-02bf-4380-bf18-fad22d6d155d" />  
 
+## d) Internet famous  
+Yksi tunnettu hyökkäys on portissa 21 oleva vsftpd. Se löytyi komennolla `search vsftpd`.
+<img width="1029" height="199" alt="image" src="https://github.com/user-attachments/assets/e51aad83-6722-4627-869a-da5540983b4b" />  
 
-## d) 
+## e) Nmapin oma tiedoston tallennus VS db_nmap.  
+`nmap -oA foo 192.168.56.11` komento tallentaa kolme tiedostoa nmapista; foo.nmap, foo.gnmap ja foo.xml.  
+<img width="498" height="90" alt="image" src="https://github.com/user-attachments/assets/e67c4e07-bded-4ca0-baf4-ea4b000447ff" />  
+Tästä saadaan helpommin suoraan ihmisen luettavaa, kun db_nmap tallentaa tiedot tietokantaan, mistä muut moduulit voivat lukea ne.  
 
+## f) Murtaudu Metasploitablen vsftpd-palveluun  
 
 
 ## Lähteet  
