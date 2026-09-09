@@ -83,8 +83,19 @@ Ajoin komennon `mkdir -p ~/harjoitus1 && mv foo.nmap foo.xml foo.gnmap log001.tx
 <img width="397" height="141" alt="image" src="https://github.com/user-attachments/assets/9803ba29-7f25-4c88-bf41-2cd23428dea9" />  
 Tein seuraavan grep haut ja sille kysymyksen.  
 Mikä vsftpd versio oli ja missä tiedostoissa se löytyy?  
-<img width="1231" height="203" alt="image" src="https://github.com/user-attachments/assets/8f496bc2-5130-4820-8222-509673a8f2a3" />
+<img width="1231" height="203" alt="image" src="https://github.com/user-attachments/assets/8f496bc2-5130-4820-8222-509673a8f2a3" />  
+
+## l) Attaaack!  
+Käytin seuraavia Mitre Attack taktiikoita ja tekniikoita.  
+-T1046 Network Service Discovery  
+-T1588.005 Obtain Capabilities: Exploits  
+-T1190 Exploit Public-Facing Application  
+-T1059 Command and Scripting Interpreter  
+-T1041 Exfiltration Over C2 Channel  
+(Mitre Att@ck)
+
 
 ## Lähteet  
 Jaswal, N. 2020. Mastering Metasploit - 4ed: Chapter 1: Approaching a Penetration Test Using Metasploit. https://learning.oreilly.com/library/view/mastering-metasploit/9781838980078/B15076_01_Final_ASB_ePub.xhtml#_idParaDest-31  
-nmap.org. Nmap Network Scanning / Chapter 15. Nmap Reference Guide. https://nmap.org/book/man-host-discovery.html
+nmap.org. Nmap Network Scanning / Chapter 15. Nmap Reference Guide. https://nmap.org/book/man-host-discovery.html  
+Mitre Att@ck. ATT&CK Matrix for Enterprise. https://attack.mitre.org/  
