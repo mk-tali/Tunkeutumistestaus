@@ -19,14 +19,19 @@ Uskon, että käyttämäni lähde on luotettava, koska se on nmapin virallinen s
 Avasin Metasploitablen ja Kalin. Kalissa ajoin komennot `sudo msfdb init` ja `sudo msfconsole` Näin pääsin msf consoleen Kalilla. Metasploitablessa ajoin komennon `sudo ifconfig eth0 192.168.56.11 netmask 255.255.255.0 up`, koska sillä ei ollut ip osoitetta. Tämä on samassa aliverkossa Kalin kanssa. Nyt ping testit toimivat molempiin suuntiin.  
 <img width="574" height="163" alt="image" src="https://github.com/user-attachments/assets/5a81871e-9677-40e6-ae8b-1ab65b2c666d" />  
 <img width="545" height="242" alt="image" src="https://github.com/user-attachments/assets/a71662a0-a130-4570-9dd3-a5a4d4399a5d" />  
-Ajoin komennon `db_nmap -sV 192.168.56.11`
+Ajoin komennon `db_nmap -sV 192.168.56.11` db_ tallentaa skannauksen tietokantaan.
 <img width="1226" height="660" alt="image" src="https://github.com/user-attachments/assets/ac8d9bb2-79dd-4841-baa5-298eff79fb5b" />  
+
+## c) Tarkastellaan tallenettuja tietoja
 Komennoilla `hosts` ja `services` nähdään, että porttiskannaus tallentui tietokantaan.  
 <img width="915" height="667" alt="image" src="https://github.com/user-attachments/assets/35b07ccf-5073-4db5-851a-0957f1f82dcd" />  
+Komennolla `services -p 21` saadaan suodatettua vain portti 21.  
+<img width="617" height="166" alt="image" src="https://github.com/user-attachments/assets/47e87f2c-a839-47ea-b814-ab597e793eff" />  
+Komennolla `services -s http` saa näkyviin molemmat http portit.  
+<img width="778" height="141" alt="image" src="https://github.com/user-attachments/assets/8dc3ba1a-02bf-4380-bf18-fad22d6d155d" />  
 
 
-
-
+## d) 
 
 
 
