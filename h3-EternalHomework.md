@@ -70,8 +70,20 @@ Komennolla `getuid` näkee millä käyttäjällä olet. Komennolla `sysinfo` nä
 Komennolla `download /etc/passwd /tmp/passwd_metasploitable.txt` pystyt ladata tiedostoja omalle koneellesi.  
 <img width="812" height="88" alt="image" src="https://github.com/user-attachments/assets/2c3fe6a0-4f42-4f94-b0ce-f1db1377ae0f" />  
 
+## j) Tallenna shell-sessio tekstitiedostoon script-työkalulla  
+Avasin Kalissa uuden terminaali ikkunan. Ajoin komennon `script -fa log001.txt`.  
+<img width="406" height="99" alt="image" src="https://github.com/user-attachments/assets/ab9dc648-9441-4f71-8b60-78f0e7212616" />  
+Avasin msfconsolen ja ajoin komennot `hosts` ja `services`.  
+<img width="804" height="1117" alt="image" src="https://github.com/user-attachments/assets/44fd7e03-1d26-4cdb-8764-3b4b277f0bd0" />  
+Komento `exit` lopettaa script tallennuksen ja `cat log001.txt` tarkistin, että sessio tallentui oikein.  
+<img width="775" height="539" alt="image" src="https://github.com/user-attachments/assets/9a290cc3-852b-4c78-abee-6b09d352d727" />  
 
-
+## k) Pivot point  
+Ajoin komennon `mkdir -p ~/harjoitus1 && mv foo.nmap foo.xml foo.gnmap log001.txt ~/harjoitus1/`, jolla loin hakemiston harjoitukselle ja siirsin tiedostot sinne.  
+<img width="397" height="141" alt="image" src="https://github.com/user-attachments/assets/9803ba29-7f25-4c88-bf41-2cd23428dea9" />  
+Tein seuraavan grep haut ja sille kysymyksen.  
+Mikä vsftpd versio oli ja missä tiedostoissa se löytyy?  
+<img width="1231" height="203" alt="image" src="https://github.com/user-attachments/assets/8f496bc2-5130-4820-8222-509673a8f2a3" />
 
 ## Lähteet  
 Jaswal, N. 2020. Mastering Metasploit - 4ed: Chapter 1: Approaching a Penetration Test Using Metasploit. https://learning.oreilly.com/library/view/mastering-metasploit/9781838980078/B15076_01_Final_ASB_ePub.xhtml#_idParaDest-31  
