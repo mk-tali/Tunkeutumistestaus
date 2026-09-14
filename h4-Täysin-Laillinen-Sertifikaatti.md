@@ -20,7 +20,13 @@
 (PortSwigger Path traversal)  
 
 ### Cross-site scripting  
--
+-Mahdollistaa hyökkääjän esiintyä uhrina, jolloin voi tehdä kaikkea mitä uhrikin.  
+-Manipuloidaan nettisivua niin, että se palauttaa haitallista javascriptiä käyttäjälle.  
+-Kolme tyyppiä: reflected, stored ja DOM-based.  
+-Puolustatutuminen syötteiden suodatuksella, tulosteen oikealla enkoodauksella ja oikeat Content-Type headerit sekä Content Security Policyt.  
+(PortSwigger Cross-site scripting)  
+
+## a) Totally Legit Sertificate  
 
 
 
