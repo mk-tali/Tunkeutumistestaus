@@ -47,7 +47,13 @@ Menin kohtaan Options, Proxies, Add. Laitoin seuraavat asetukset Proxylle.
 <img width="1001" height="529" alt="image" src="https://github.com/user-attachments/assets/c801aa00-ee0a-40e3-b21c-843a7b0bb034" />  
 web-security-academy.net patternin pitäisi toimia kaikissa PortSwigger labroissa.
 Sitten Save ja testaamaan, että proxy toimii.  
-Käynnistin zaproxyn ja avasin PortSwiggeristä labran. 
+Käynnistin zaproxyn, FoxyProxysta "Proxy by Patterns" valittuna ja avasin PortSwiggeristä labran. FoxyProxy toimii labra sivulla.  
+<img width="1258" height="1320" alt="9ee7800d-903e-4f6c-a805-bc034bd44c60" src="https://github.com/user-attachments/assets/3d71d846-50b1-48f8-b94d-4f59531f2d8a" />  
+
+
+
+
+
 
 
 
@@ -58,5 +64,5 @@ PortSwigger. Insecure direct object references (IDOR). https://portswigger.net/w
 PortSwigger. Path traversal. https://portswigger.net/web-security/file-path-traversal  
 PortSwigger. Cross-site scripting. https://portswigger.net/web-security/cross-site-scripting  
 PortSwigger. Cross-site scripting. https://portswigger.net/web-security/all-labs#cross-site-scripting  
-Karvinen, Tero. 2026. Tunkeutumistestaus. https://terokarvinen.com/tunkeutumistestaus/ 
+Karvinen, Tero. 2026. Tunkeutumistestaus. https://terokarvinen.com/tunkeutumistestaus/  
 Mozilla. https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/
