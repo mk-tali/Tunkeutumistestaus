@@ -45,7 +45,8 @@ Menin sivulle https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/
 <img width="484" height="448" alt="image" src="https://github.com/user-attachments/assets/9bd6a66e-fc80-48f4-a16e-90fc65f64a4b" />  
 Menin kohtaan Options, Proxies, Add. Laitoin seuraavat asetukset Proxylle.  
 <img width="1001" height="529" alt="image" src="https://github.com/user-attachments/assets/c801aa00-ee0a-40e3-b21c-843a7b0bb034" />  
-
+web-security-academy.net patternin pitäisi toimia kaikissa PortSwigger labroissa.
+Sitten Save ja testaamaan, että proxy toimii.
 
 
 
