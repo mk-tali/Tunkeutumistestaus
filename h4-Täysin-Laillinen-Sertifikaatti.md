@@ -49,6 +49,11 @@ web-security-academy.net patternin pitäisi toimia kaikissa PortSwigger labroiss
 Sitten Save ja testaamaan, että proxy toimii.  
 Käynnistin zaproxyn, FoxyProxysta "Proxy by Patterns" valittuna ja avasin PortSwiggeristä labran. FoxyProxy toimii labra sivulla.  
 <img width="1258" height="1320" alt="9ee7800d-903e-4f6c-a805-bc034bd44c60" src="https://github.com/user-attachments/assets/3d71d846-50b1-48f8-b94d-4f59531f2d8a" />  
+Muut sivut eivät näy proxyssa, testasin Wikipedialla.  
+<img width="1272" height="1272" alt="Näyttökuva 2026-09-15 155243" src="https://github.com/user-attachments/assets/1d296251-f4d7-40ef-b962-fc4598f9382e" />  
+
+## c) Reflected XSS into HTML context with nothing encoded  
+Tämän labran tarkoitus on suorittaa cross-site scripting attack, joka kutsuu alert funktiota. 
 
 
 
@@ -64,5 +69,6 @@ PortSwigger. Insecure direct object references (IDOR). https://portswigger.net/w
 PortSwigger. Path traversal. https://portswigger.net/web-security/file-path-traversal  
 PortSwigger. Cross-site scripting. https://portswigger.net/web-security/cross-site-scripting  
 PortSwigger. Cross-site scripting. https://portswigger.net/web-security/all-labs#cross-site-scripting  
+PortSwigger. Lab: Reflected XSS into HTML context with nothing encoded. https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded  
 Karvinen, Tero. 2026. Tunkeutumistestaus. https://terokarvinen.com/tunkeutumistestaus/  
 Mozilla. https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/
