@@ -46,7 +46,8 @@ Menin sivulle https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/
 Menin kohtaan Options, Proxies, Add. Laitoin seuraavat asetukset Proxylle.  
 <img width="1001" height="529" alt="image" src="https://github.com/user-attachments/assets/c801aa00-ee0a-40e3-b21c-843a7b0bb034" />  
 web-security-academy.net patternin pitäisi toimia kaikissa PortSwigger labroissa.
-Sitten Save ja testaamaan, että proxy toimii.
+Sitten Save ja testaamaan, että proxy toimii.  
+Käynnistin zaproxyn ja avasin PortSwiggeristä labran. 
 
 
 
@@ -56,5 +57,6 @@ OWASP TOP 10. 2021. Broken Access Control. https://top10.owasp.org/2021/A01_2021
 PortSwigger. Insecure direct object references (IDOR). https://portswigger.net/web-security/access-control/idor  
 PortSwigger. Path traversal. https://portswigger.net/web-security/file-path-traversal 
 PortSwigger. Cross-site scripting. https://portswigger.net/web-security/cross-site-scripting  
+PortSwigger. Cross-site scripting. https://portswigger.net/web-security/all-labs#cross-site-scripting  
 Karvinen, Tero. 2026. Tunkeutumistestaus. https://terokarvinen.com/tunkeutumistestaus/ 
 Mozilla. https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/
