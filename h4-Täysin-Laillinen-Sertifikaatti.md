@@ -38,8 +38,11 @@ Sitten View Certificates, Authorities ja Import... Toin aikaisemmin tallentamani
 Seuraavaksi hain Firefoxin asetuksista "Proxy" ja avasin Network Settings asetukset. Laitoin asetukset seuraavanlaisesti.  
 <img width="758" height="810" alt="image" src="https://github.com/user-attachments/assets/d0668253-31f2-4804-87d8-2d43e820489a" />  
 Avasin PortSwigger sivun ja ZAP näytti tältä.  
-<img width="1282" height="1321" alt="image" src="https://github.com/user-attachments/assets/d4182361-8395-43d3-9835-f84fb72076ec" />
+<img width="1282" height="1321" alt="image" src="https://github.com/user-attachments/assets/d4182361-8395-43d3-9835-f84fb72076ec" />  
 
+## b) Kettumaista  
+Menin sivulle https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/ ja asensin FoxyProxyn Firefoxiin. Nyt FoxyProxy on Firefoxissa.  
+<img width="484" height="448" alt="image" src="https://github.com/user-attachments/assets/9bd6a66e-fc80-48f4-a16e-90fc65f64a4b" />  
 
 
 
@@ -51,4 +54,5 @@ OWASP TOP 10. 2021. Broken Access Control. https://top10.owasp.org/2021/A01_2021
 PortSwigger. Insecure direct object references (IDOR). https://portswigger.net/web-security/access-control/idor  
 PortSwigger. Path traversal. https://portswigger.net/web-security/file-path-traversal 
 PortSwigger. Cross-site scripting. https://portswigger.net/web-security/cross-site-scripting  
-Karvinen, Tero. 2026. https://terokarvinen.com/tunkeutumistestaus/ 
+Karvinen, Tero. 2026. Tunkeutumistestaus. https://terokarvinen.com/tunkeutumistestaus/ 
+Mozilla. https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/
