@@ -55,7 +55,7 @@ Käynnistin zaproxyn ja avasin PortSwiggeristä labran.
 ## Lähteet  
 OWASP TOP 10. 2021. Broken Access Control. https://top10.owasp.org/2021/A01_2021-Broken_Access_Control/  
 PortSwigger. Insecure direct object references (IDOR). https://portswigger.net/web-security/access-control/idor  
-PortSwigger. Path traversal. https://portswigger.net/web-security/file-path-traversal 
+PortSwigger. Path traversal. https://portswigger.net/web-security/file-path-traversal  
 PortSwigger. Cross-site scripting. https://portswigger.net/web-security/cross-site-scripting  
 PortSwigger. Cross-site scripting. https://portswigger.net/web-security/all-labs#cross-site-scripting  
 Karvinen, Tero. 2026. Tunkeutumistestaus. https://terokarvinen.com/tunkeutumistestaus/ 
