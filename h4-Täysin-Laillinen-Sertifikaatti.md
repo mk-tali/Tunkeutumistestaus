@@ -100,9 +100,27 @@ Vaihetaan filename=30,jpg /etc/passwd.
 <img width="1188" height="201" alt="image" src="https://github.com/user-attachments/assets/1fcb398f-2be6-43ab-af2f-ab001bc69463" />  
 (PortSwigger. Lab: File path traversal, traversal sequences blocked with absolute path bypass.)  
 
-## h)  
+## h) Lab: File path traversal, traversal sequences stripped non-recursively  
+Tässä labissa on sama idea kuin aikaisemmissa path traversal. Tässä path traversal sekvenssi on poistettu ei toistuvasti. Syöttämällä `....//....//....//etc/passwd` GET pyyntöön, pitäisi saada passwd tiedosto.  
+Tässä GET pyyntö kuvalle, vaihetaan siihen etc/passwd tiedosto.  
+<img width="788" height="62" alt="image" src="https://github.com/user-attachments/assets/54b46aa7-e3a3-47ca-8dfb-5fc21e8c781a" />  
+<img width="789" height="62" alt="image" src="https://github.com/user-attachments/assets/b3caaaf8-9291-477b-9824-9af92512bcb1" />  
+<img width="1192" height="216" alt="image" src="https://github.com/user-attachments/assets/e8b13774-43ff-4ecd-84ff-a3182db4805d" />  
+(PortSwigger. Lab: File path traversal, traversal sequences stripped non-recursively.)  
 
-
+## i) Insecure Direct Object Reference (IDOR)  
+Labi tallentaa chat lokit palvelimen tiedostojärjestelmään ja hakee ne staattisella URL:illa. Tarkoitus on löytää käyttäjän "carlos" salasana ja kirjautua sen käyttäjälle.  
+Menin ensiksi My acoount sivulle, mutta siellä  ei ollut mitään hyödyllistä. Avasin Live chatin, painoin View transcript kohdasta ja se latasi tiedoston nimeltä 2.txt. Avasin tiedoston ja tässä sen sisältö.  
+<img width="715" height="140" alt="image" src="https://github.com/user-attachments/assets/8ae645d1-0a15-4ab1-bf5f-f6d994ca1b6e" />  
+Löysin ZAP:ista GET pyynnön tiedostolle.  
+<img width="1282" height="36" alt="image" src="https://github.com/user-attachments/assets/79da579a-3482-480b-b970-947ae57b6261" />  
+Vaihtamalla URL:iin 2 tilalle 1, saa salasanan näkyviin.  
+<img width="895" height="323" alt="image" src="https://github.com/user-attachments/assets/26f2f8e1-cb2e-4edf-a439-94643509ca01" />  
+Menin My account sivulle ja yritin kirjautua sisään carlosina.  
+<img width="405" height="330" alt="image" src="https://github.com/user-attachments/assets/58680700-0246-4d4d-8d1c-4d8174a7247f" />  
+<img width="1252" height="554" alt="image" src="https://github.com/user-attachments/assets/7f11fa41-67c2-472a-9704-fc96bcac6dd8" />  
+Pääsin kirjautumaan carlosin tunnuksilla. 
+(PortSwigger. Lab: Insecure direct object references.)  
 
 
 
@@ -117,5 +135,6 @@ PortSwigger. Lab: Stored XSS into HTML context with nothing encoded. https://por
 PortSwigger. Lab: File path traversal, simple case. https://portswigger.net/web-security/file-path-traversal/lab-simple  
 PortSwigger. Lab: File path traversal, traversal sequences blocked with absolute path bypass. https://portswigger.net/web-security/file-path-traversal/lab-absolute-path-bypass  
 PortSwigger. Lab: File path traversal, traversal sequences stripped non-recursively. https://portswigger.net/web-security/file-path-traversal/lab-sequences-stripped-non-recursively  
+PortSwigger. Lab: Insecure direct object references. https://portswigger.net/web-security/access-control/lab-insecure-direct-object-references
 Karvinen, Tero. 2026. Tunkeutumistestaus. https://terokarvinen.com/tunkeutumistestaus/  
 Mozilla. https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/
