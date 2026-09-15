@@ -27,6 +27,13 @@
 (PortSwigger Cross-site scripting)  
 
 ## a) Totally Legit Sertificate  
+Aloitin ajamalla komennon `sudo apt-get install zaproxy`, joka löytyi kurssin tehtäväsivulta. (Karvinen 2026)  
+<img width="698" height="444" alt="image" src="https://github.com/user-attachments/assets/709182aa-5338-4f6a-8972-84ff6ec79ca9" />  
+Käynnistin zaproxyn komennolla `zaproxy`. Menin kohtaan Tools -> Options -> Network -> Server Certificates. Tässä näkyi generoituna sertifikaatti.  
+<img width="1149" height="1077" alt="image" src="https://github.com/user-attachments/assets/96dfdbe9-324b-43e9-b53e-a3af3d98f859" />  
+
+
+
 
 
 
@@ -35,4 +42,4 @@ OWASP TOP 10. 2021. Broken Access Control. https://top10.owasp.org/2021/A01_2021
 PortSwigger. Insecure direct object references (IDOR). https://portswigger.net/web-security/access-control/idor  
 PortSwigger. Path traversal. https://portswigger.net/web-security/file-path-traversal 
 PortSwigger. Cross-site scripting. https://portswigger.net/web-security/cross-site-scripting  
-
+Karvinen, Tero. 2026. https://terokarvinen.com/tunkeutumistestaus/ 
