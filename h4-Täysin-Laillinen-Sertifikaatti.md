@@ -65,6 +65,13 @@ ZAP:in perusteella sivu ei käsittele hakua mitenkään, joten hakukenttään sy
 
 ## d) Lab: Stored XSS into HTML context with nothing encoded  
 Tämän labran tarkoitus suorittaa stored cross-site scripting attack jättämällä kommentti, joka kutsuu alert funktiota, kun blogijulkaisua katsotaan.  
+Aloitin avaamalla blogin ja kokeilin jättää kommentiksi saman funktion `<script>alert(1)</script>`, kuin edellisessä labissa.  
+<img width="757" height="439" alt="image" src="https://github.com/user-attachments/assets/95fd6aed-75e4-4d41-9bc4-da8bd48457dc" />  
+Tämä toimi, koska sivusto tallentaa kommentin ja aina kun joku avaa sivun minne kommentti on julkaistu, sivu ajaa haitallisen ohjelman käyttäjän selaimessa. (PortSwigger. Lab: Stored XSS into HTML context with nothing encoded.)  
+<img width="1207" height="207" alt="image" src="https://github.com/user-attachments/assets/2fbe1661-b8b3-42d3-af10-b899f2e200aa" />  
+
+
+
 
 
 
@@ -76,5 +83,6 @@ PortSwigger. Path traversal. https://portswigger.net/web-security/file-path-trav
 PortSwigger. Cross-site scripting. https://portswigger.net/web-security/cross-site-scripting  
 PortSwigger. Cross-site scripting. https://portswigger.net/web-security/all-labs#cross-site-scripting  
 PortSwigger. Lab: Reflected XSS into HTML context with nothing encoded. https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded  
+PortSwigger. Lab: Stored XSS into HTML context with nothing encoded. https://portswigger.net/web-security/cross-site-scripting/stored/lab-html-context-nothing-encoded  
 Karvinen, Tero. 2026. Tunkeutumistestaus. https://terokarvinen.com/tunkeutumistestaus/  
 Mozilla. https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/
