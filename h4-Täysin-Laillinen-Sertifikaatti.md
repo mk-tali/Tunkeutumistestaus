@@ -98,8 +98,9 @@ Vaihetaan filename=30,jpg /etc/passwd.
 <img width="778" height="42" alt="image" src="https://github.com/user-attachments/assets/d1de5345-e55b-4ede-a83f-4bf0c6376023" />  
 <img width="463" height="205" alt="image" src="https://github.com/user-attachments/assets/99a9989a-37e5-4038-905a-4b90814c85e8" />  
 <img width="1188" height="201" alt="image" src="https://github.com/user-attachments/assets/1fcb398f-2be6-43ab-af2f-ab001bc69463" />  
+(PortSwigger. Lab: File path traversal, traversal sequences blocked with absolute path bypass.)  
 
-
+## h)  
 
 
 
@@ -114,5 +115,7 @@ PortSwigger. Cross-site scripting. https://portswigger.net/web-security/all-labs
 PortSwigger. Lab: Reflected XSS into HTML context with nothing encoded. https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded  
 PortSwigger. Lab: Stored XSS into HTML context with nothing encoded. https://portswigger.net/web-security/cross-site-scripting/stored/lab-html-context-nothing-encoded  
 PortSwigger. Lab: File path traversal, simple case. https://portswigger.net/web-security/file-path-traversal/lab-simple  
+PortSwigger. Lab: File path traversal, traversal sequences blocked with absolute path bypass. https://portswigger.net/web-security/file-path-traversal/lab-absolute-path-bypass  
+PortSwigger. Lab: File path traversal, traversal sequences stripped non-recursively. https://portswigger.net/web-security/file-path-traversal/lab-sequences-stripped-non-recursively  
 Karvinen, Tero. 2026. Tunkeutumistestaus. https://terokarvinen.com/tunkeutumistestaus/  
 Mozilla. https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/
