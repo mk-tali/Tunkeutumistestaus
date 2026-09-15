@@ -54,8 +54,15 @@ Muut sivut eivät näy proxyssa, testasin Wikipedialla.
 
 ## c) Reflected XSS into HTML context with nothing encoded  
 Tämän labran tarkoitus on suorittaa cross-site scripting attack, joka kutsuu alert funktiota. 
+Kokeilin ensin laittaa hakukenttään "test" ja katsoin näkyykö URL:issa mitään. URL:iin tuli näkyviin test.  
+<img width="709" height="57" alt="image" src="https://github.com/user-attachments/assets/dc607cff-aa67-4b33-91cc-58b489caf355" />  
+Tutkin ZAP:ia samalla ja löysin kohdan HTML-elementin sisältä, jossa "test" hakuni tehtiin.  
+<img width="499" height="109" alt="image" src="https://github.com/user-attachments/assets/40c2820d-3e4e-4e88-bec0-d8134581caa6" />  
+ZAP:in perusteella lab lataa sivun kokonaan uudestaan, joten hakukenttään syöttämällä `<script>alert(1)</script>` saa tämän tuloksen.  
+<img width="792" height="762" alt="image" src="https://github.com/user-attachments/assets/26d211d0-25a9-41be-a041-b7a1042196f8" />  
+<img width="1194" height="207" alt="image" src="https://github.com/user-attachments/assets/7f1e367c-86b1-4410-8513-c6eaec807cdb" />  
 
-
+ 
 
 
 
