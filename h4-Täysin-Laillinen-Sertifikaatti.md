@@ -123,7 +123,6 @@ Pääsin kirjautumaan carlosin tunnuksilla.
 (PortSwigger. Lab: Insecure direct object references.)  
 
 
-
 ## Lähteet  
 OWASP TOP 10. 2021. Broken Access Control. https://top10.owasp.org/2021/A01_2021-Broken_Access_Control/  
 PortSwigger. Insecure direct object references (IDOR). https://portswigger.net/web-security/access-control/idor  
