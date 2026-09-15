@@ -32,7 +32,7 @@ Aloitin ajamalla komennon `sudo apt-get install zaproxy`, joka löytyi kurssin t
 Käynnistin zaproxyn komennolla `zaproxy`. Menin kohtaan Tools -> Options -> Network -> Server Certificates. Tässä näkyi generoituna sertifikaatti.  
 <img width="1149" height="1077" alt="image" src="https://github.com/user-attachments/assets/96dfdbe9-324b-43e9-b53e-a3af3d98f859" />  
 Options kohdasta Display sai ZAP:in kaappaamaan myös kuvat.  
-<img width="379" height="40" alt="image" src="https://github.com/user-attachments/assets/878ade7c-8f60-4576-a261-70f49a90aaca" />  
+<img width="367" height="31" alt="image" src="https://github.com/user-attachments/assets/cd4c0571-1cac-4f86-b854-8741462dcbda" />  
 Tallensin sertifikaatin kotihakemistooni "Save" napista. Avasin Firefoxin ja hain Settings kohdasta "Certificate".  
 <img width="665" height="234" alt="image" src="https://github.com/user-attachments/assets/abeaa818-c45a-40d7-ae8f-a49af126490e" />  
 Sitten View Certificates, Authorities ja Import... Toin aikaisemmin tallentamani sertifikaatin ja valitsin seuraavan kohdan.  
