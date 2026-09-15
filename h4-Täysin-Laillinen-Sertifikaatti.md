@@ -37,8 +37,8 @@ Sitten View Certificates, Authorities ja Import... Toin aikaisemmin tallentamani
 <img width="798" height="303" alt="image" src="https://github.com/user-attachments/assets/d73c8714-2745-4c51-b2f5-71fb847b2c4b" />  
 Seuraavaksi hain Firefoxin asetuksista "Proxy" ja avasin Network Settings asetukset. Laitoin asetukset seuraavanlaisesti.  
 <img width="758" height="810" alt="image" src="https://github.com/user-attachments/assets/d0668253-31f2-4804-87d8-2d43e820489a" />  
-
-
+Avasin PortSwigger sivun ja ZAP näytti tältä.  
+<img width="1282" height="1321" alt="image" src="https://github.com/user-attachments/assets/d4182361-8395-43d3-9835-f84fb72076ec" />
 
 
 
