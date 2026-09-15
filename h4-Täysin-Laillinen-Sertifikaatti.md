@@ -43,7 +43,8 @@ Avasin PortSwigger sivun ja ZAP näytti tältä.
 ## b) Kettumaista  
 Menin sivulle https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/ ja asensin FoxyProxyn Firefoxiin. Nyt FoxyProxy on Firefoxissa.  
 <img width="484" height="448" alt="image" src="https://github.com/user-attachments/assets/9bd6a66e-fc80-48f4-a16e-90fc65f64a4b" />  
-
+Menin kohtaan Options, Proxies, Add. Laitoin seuraavat asetukset Proxylle.  
+<img width="1001" height="529" alt="image" src="https://github.com/user-attachments/assets/c801aa00-ee0a-40e3-b21c-843a7b0bb034" />  
 
 
 
