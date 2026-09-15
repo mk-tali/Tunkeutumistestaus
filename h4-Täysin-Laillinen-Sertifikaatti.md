@@ -31,6 +31,15 @@ Aloitin ajamalla komennon `sudo apt-get install zaproxy`, joka löytyi kurssin t
 <img width="698" height="444" alt="image" src="https://github.com/user-attachments/assets/709182aa-5338-4f6a-8972-84ff6ec79ca9" />  
 Käynnistin zaproxyn komennolla `zaproxy`. Menin kohtaan Tools -> Options -> Network -> Server Certificates. Tässä näkyi generoituna sertifikaatti.  
 <img width="1149" height="1077" alt="image" src="https://github.com/user-attachments/assets/96dfdbe9-324b-43e9-b53e-a3af3d98f859" />  
+Tallensin sertifikaatin kotihakemistooni "Save" napista. Avasin Firefoxin ja hain Settings kohdasta "Certificate".  
+<img width="665" height="234" alt="image" src="https://github.com/user-attachments/assets/abeaa818-c45a-40d7-ae8f-a49af126490e" />  
+Sitten View Certificates, Authorities ja Import... Toin aikaisemmin tallentamani sertifikaatin ja valitsin seuraavan kohdan.  
+<img width="798" height="303" alt="image" src="https://github.com/user-attachments/assets/d73c8714-2745-4c51-b2f5-71fb847b2c4b" />  
+Seuraavaksi hain Firefoxin asetuksista "Proxy" ja avasin Network Settings asetukset. Laitoin asetukset seuraavanlaisesti.  
+<img width="758" height="810" alt="image" src="https://github.com/user-attachments/assets/d0668253-31f2-4804-87d8-2d43e820489a" />  
+
+
+
 
 
 
