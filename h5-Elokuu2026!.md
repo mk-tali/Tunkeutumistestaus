@@ -40,10 +40,13 @@ Ajoin komennon `./john` ja näkyy, että John the Ripper on asennettu.
 <img width="934" height="97" alt="image" src="https://github.com/user-attachments/assets/768cd2fa-c0f6-428c-8ef6-6c15c8bc4469" />  
 Poistin aikaisemmin luomasta example tiedostosta "-" hashin perästä, koska John the Ripper ei osaa käsitellä sitä. `cut -d' ' -f1 example > example.hash` Nyt tiedosto näyttää tältä.  
 <img width="356" height="119" alt="image" src="https://github.com/user-attachments/assets/0f020d17-e941-4e1b-a503-decd199af1ee" />  
-Siirryin /john/run ja ajoin komennon `./john --format=raw-md5 ~/h5-Elokuu2026\!/example.hash`. Tässä piti spesifioida format, jotta John osaa käsitellä sen oikein.  
+Siirryin /john/run ja ajoin komennon `./john --format=raw-md5 ~/h5-Elokuu2026\!/example.hash`. Tässä piti spesifioida hashin format, jotta John osaa käsitellä sen oikein.  
 <img width="741" height="253" alt="image" src="https://github.com/user-attachments/assets/c288c810-b12a-4056-8f3a-f5fd5b55e80d" />  
 Oikea salasana "password" löytyi.  
 
+## e) Tiedosto  
+Latasin aluksi ohjesivulta löytyvän zip tiedoston. `wget https://TeroKarvinen.com/2023/crack-file-password-with-john/tero.zip` (Karvinen 2023). Yritin unzipata sen, mutta vaati salasanan.  
+<img width="895" height="368" alt="image" src="https://github.com/user-attachments/assets/f99648f3-3d2d-42a1-ba34-bb5af111507a" />  
 
 
 
