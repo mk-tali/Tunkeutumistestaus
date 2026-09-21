@@ -47,14 +47,18 @@ Oikea salasana "password" löytyi.
 ## e) Tiedosto  
 Latasin aluksi ohjesivulta löytyvän zip tiedoston. `wget https://TeroKarvinen.com/2023/crack-file-password-with-john/tero.zip` (Karvinen 2023). Yritin unzipata sen, mutta vaati salasanan.  
 <img width="895" height="368" alt="image" src="https://github.com/user-attachments/assets/f99648f3-3d2d-42a1-ba34-bb5af111507a" />  
-
-
+Muutin tero.zip tiedoston tero.zip.hash tiedostoksi. `/john/run/zip2john tero.zip > tero.zip.hash`.  
+<img width="946" height="230" alt="image" src="https://github.com/user-attachments/assets/cbaea3e1-3447-4e0f-bbd4-a1ace7737b12" />  
+Ajoin komennon `./john ../../tero.zip.hash`, jolla John murtaa hashin. Sain salasanaksi "butterfly"  
+<img width="798" height="269" alt="image" src="https://github.com/user-attachments/assets/50558e7b-cea4-41a2-a8ed-0a8beb6de488" />  
+Menin unzippaamaan ter.zip tiedoston ja annoin salasanaksi "butterfly". Salasana oli oikein.  
+<img width="367" height="96" alt="image" src="https://github.com/user-attachments/assets/a79413e9-3e93-4629-b82a-ced0055ed363" />  
 
 ## f) Tiiviste  
-Loin käyttäjän  
+Loin käyttäjän "JtR".
 <img width="357" height="69" alt="image" src="https://github.com/user-attachments/assets/cd36a7fd-57b4-4198-87e2-1ad968bd5e0c" />  
+Asetin salasanaksi "testi".  
 <img width="367" height="101" alt="image" src="https://github.com/user-attachments/assets/1bb79386-ae2c-4df9-91ac-489941f59c42" />  
-salasana on "testi"
 
 
 
