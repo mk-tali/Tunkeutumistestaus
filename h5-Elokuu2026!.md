@@ -61,6 +61,16 @@ Asetin salasanaksi "testi".
 <img width="367" height="101" alt="image" src="https://github.com/user-attachments/assets/1bb79386-ae2c-4df9-91ac-489941f59c42" />  
 Ajoin komennon `sudo unshadow /etc/passwd /etc/shadow > ~/h5-Elokuu2026\!/JtR.hash`. Tämä yhdistää passwd:stä löytyvät käyttäjätunnukset shadow:sta löytyviin salasana hasheihin, että John the Ripper osaa yhdistää molemmista löytyvät tiedot käyttäjän salasanan murtamiseen.  
 <img width="868" height="65" alt="image" src="https://github.com/user-attachments/assets/5aebfac8-f8c8-4cdf-8bee-fd2bdabfb579" />  
+Ajoin komennon `./john ~/h5-Elokuu2026\!/JtR.hash`, mutta olibn väärässä hakemistossa. Siirryin oikeaan hakemistoon ja ajoin komennon uudelleen.  
+<img width="367" height="193" alt="image" src="https://github.com/user-attachments/assets/91beaaf8-ff54-4f48-a28d-55830b94ddda" />  
+Tässä tuli virheeksi "No password hashes loaded (see FAQ)" Googlasin tuon ja löysin openwallin FAQ sivun, jossa oli sama kysymys kuin minulla. Tämän sivun ja Clauden avulla selvisi, että ongelmana on ilmeisesti hash tyyppi. `./configure` tulosteessa näkyi kohta "Generic crypt(3) format - no" ja John the Ripper tarvitsee sen, että pystyy käsittelemään Kalin käyttäjien salasanoja, jotka tallennetaan yescrypt hashina. (Openwall) Yritin lisätä Generic crypt(3) formatin seuraavien vaiheiden avulla. Asensin libcrypt-dev kirjaston `sudo apt-get install -y libcrypt-dev`. /john/src hakemistossa `make -s clean`. `./configure`. Generic crypt(3) format oli silti ... no.  
+<img width="655" height="235" alt="image" src="https://github.com/user-attachments/assets/8c2dc68b-d9d5-4797-9896-6a0d2c839cc7" />  
+Koska en saanut tuota lisättyä, päädyin muuttamaan JtR käyttäjän salasanan hashin SHA-512-crypt muotoon.  
+<img width="771" height="71" alt="image" src="https://github.com/user-attachments/assets/d3a88b62-c046-4668-85ea-51e1ae55c066" />  
+<img width="954" height="186" alt="image" src="https://github.com/user-attachments/assets/8e6505c5-8c4f-4669-8581-6d5dbd8bf9e6" />  
+Kuvissa näkyy vaiheet miten muutin hashin. 
+
+
 
 
 
@@ -68,3 +78,4 @@ Ajoin komennon `sudo unshadow /etc/passwd /etc/shadow > ~/h5-Elokuu2026\!/JtR.ha
 ## Lähteet  
 Karvinen Tero. 2022. Cracking Passwords with Hashcat. https://terokarvinen.com/2022/cracking-passwords-with-hashcat/  
 Karvinen Tero. 2023. Crack File Password With John. https://terokarvinen.com/2023/crack-file-password-with-john/  
+Openwall. John the Ripper FAQ. https://www.openwall.com/john/doc/FAQ.shtml  
