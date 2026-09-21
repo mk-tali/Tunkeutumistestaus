@@ -91,11 +91,13 @@ Kokeilin ilman sääntöjä ja ei löytynyt salasanaa. --potfile-disable estää
 Kokeilin seuraavaksi best66.rule kanssa, mutta sekään ei toiminut.  
 <img width="949" height="229" alt="image" src="https://github.com/user-attachments/assets/ca7adcc1-0817-49b0-8550-4e3cc83fad10" />  
 <img width="609" height="371" alt="image" src="https://github.com/user-attachments/assets/d5ab5a7c-b593-4aba-8658-276ded7b1376" />  
-
-
-
-
-
+Claude sanoi tähän, että olisi parempi kokeilla salasanalla jossa on vain yksi muuttuja, kuten "Password". Loin tuolle salasanalle uuden hashin ja kokeilin murtaa sen.    
+<img width="678" height="123" alt="image" src="https://github.com/user-attachments/assets/02533587-82a2-44f7-9da9-308aecf11983" />  
+<img width="607" height="345" alt="image" src="https://github.com/user-attachments/assets/22def7d7-a3ee-4c3b-a975-941ac2d28aea" />  
+Ilman sääntöjä ei onnistunut, kuten ei pitäisikään. Sitten säännön kanssa.  
+<img width="944" height="83" alt="image" src="https://github.com/user-attachments/assets/582fd72d-ae97-4760-9cb0-32ea631bc5a6" />  
+<img width="630" height="431" alt="image" src="https://github.com/user-attachments/assets/0d451e9a-5804-41c3-a092-0aabe1538fcd" />  
+Nyt onnistui. Sääntö muutti sanakirjan sanan "password" muotoon "Password" ja löysi osuman hashiin. 
 
 
 ## Lähteet  
