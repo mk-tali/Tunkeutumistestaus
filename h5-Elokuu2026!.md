@@ -25,6 +25,10 @@ Tarkistin komennolla `hashid -m 5f4dcc3b5aa765d61d8327deb882cf99` hashin tyypin.
 Sitten käytin hashcatia salasanan murtamiseen rockyou.txt tiedoston avulla. `hashcat -m 0 5f4dcc3b5aa765d61d8327deb882cf99 rockyou.txt` Hashcat tuotti paljon muutakin tulostetta, mutta kuvassa näkyy kohta, missä hashcat sai oikean salasanan.  
 <img width="348" height="142" alt="image" src="https://github.com/user-attachments/assets/2b011b06-f5cf-4d23-8653-49cd09cd683f" />  
 
+## c) John the Ripper  
+Aloitin tarkistamalla, että minulla on kaikki tarvittavat työkalut tätä varten. Yritin ajaa komentoa `sudo apt-get -y install micro bash-completion git build-essential libssl-dev zlib1g zlib1g-dev zlib-gst libbz2-1.0 libbz2-dev atool zip wget` (Karvinen 2023), mutta sain virheen "E: Unable to locate package zlib-gst".  
+<img width="941" height="126" alt="image" src="https://github.com/user-attachments/assets/062f4bfa-d79b-4227-9cbb-2d849dd7c664" />  
+Ohjesivulla luki, että komennot ovat Debian 11:sta, niin kysyin Claudelta, onko Kalille jokin eri komento. Claude vastasi, että pakettia zlib-gst ei ole olemassa ja kyse on todennäköisesti kirjoitusvirheestä ohjesivun komennossa. Claude sanoi, että John the Ripperin pitäisi toimia ilmankin sitä. Ajoin komennon uudestaan ja jätin kohdan `zlib-gst` pois. Sain paketit asennettua ja jatkoin Johnin asennukseen.  
 
 
 
