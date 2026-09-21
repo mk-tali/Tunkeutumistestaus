@@ -38,6 +38,13 @@ Komennolla `ls -1` /john/run hakemistosta löytyi ajettavat ohjelmat ja skriptit
 <img width="358" height="186" alt="image" src="https://github.com/user-attachments/assets/a4d9d825-d9ed-4b56-8796-5880fd309f2d" />  
 Ajoin komennon `./john` ja näkyy, että John the Ripper on asennettu.  
 <img width="934" height="97" alt="image" src="https://github.com/user-attachments/assets/768cd2fa-c0f6-428c-8ef6-6c15c8bc4469" />  
+Poistin aikaisemmin luomasta example tiedostosta "-" hashin perästä, koska John the Ripper ei osaa käsitellä sitä. `cut -d' ' -f1 example > example.hash` Nyt tiedosto näyttää tältä.  
+<img width="356" height="119" alt="image" src="https://github.com/user-attachments/assets/0f020d17-e941-4e1b-a503-decd199af1ee" />  
+Siirryin /john/run ja ajoin komennon `./john --format=raw-md5 ~/h5-Elokuu2026\!/example.hash`. Tässä piti spesifioida format, jotta John osaa käsitellä sen oikein.  
+<img width="741" height="253" alt="image" src="https://github.com/user-attachments/assets/c288c810-b12a-4056-8f3a-f5fd5b55e80d" />  
+Oikea salasana "password" löytyi.  
+
+
 
 
 ## f) Tiiviste  
