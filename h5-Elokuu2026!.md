@@ -29,7 +29,22 @@ Sitten käytin hashcatia salasanan murtamiseen rockyou.txt tiedoston avulla. `ha
 Aloitin tarkistamalla, että minulla on kaikki tarvittavat työkalut tätä varten. Yritin ajaa komentoa `sudo apt-get -y install micro bash-completion git build-essential libssl-dev zlib1g zlib1g-dev zlib-gst libbz2-1.0 libbz2-dev atool zip wget` (Karvinen 2023), mutta sain virheen "E: Unable to locate package zlib-gst".  
 <img width="941" height="126" alt="image" src="https://github.com/user-attachments/assets/062f4bfa-d79b-4227-9cbb-2d849dd7c664" />  
 Ohjesivulla luki, että komennot ovat Debian 11:sta, niin kysyin Claudelta, onko Kalille jokin eri komento. Claude vastasi, että pakettia zlib-gst ei ole olemassa ja kyse on todennäköisesti kirjoitusvirheestä ohjesivun komennossa. Claude sanoi, että John the Ripperin pitäisi toimia ilmankin sitä. Ajoin komennon uudestaan ja jätin kohdan `zlib-gst` pois. Sain paketit asennettua ja jatkoin Johnin asennukseen.  
+Kloonasin tarvittavan github sivun `git clone --depth=1 https://github.com/openwall/john.git`. Siirryin hakemistoon john/src/ ja ajoin komennon `./configure`.  
+<img width="351" height="90" alt="image" src="https://github.com/user-attachments/assets/a927d15f-aa3b-40d7-a5b3-1039c0afcb4e" />  
+<img width="658" height="466" alt="image" src="https://github.com/user-attachments/assets/64aefcb1-3dfa-47a9-b580-cf4486eacae4" />  
+Tässä näkyvien kirjastojen pitäisi riittää tehtävän tekemiseen.  
+Seuraavaksi ajoin komennon `make -s clean && make -sj4` ja parin minuutin jälkeen make prosessi oli valmis.  
+Komennolla `ls -1` /john/run hakemistosta löytyi ajettavat ohjelmat ja skriptit.  
+<img width="358" height="186" alt="image" src="https://github.com/user-attachments/assets/a4d9d825-d9ed-4b56-8796-5880fd309f2d" />  
+Ajoin komennon `./john` ja näkyy, että John the Ripper on asennettu.  
+<img width="934" height="97" alt="image" src="https://github.com/user-attachments/assets/768cd2fa-c0f6-428c-8ef6-6c15c8bc4469" />  
 
+
+## f) Tiiviste  
+Loin käyttäjän  
+<img width="357" height="69" alt="image" src="https://github.com/user-attachments/assets/cd36a7fd-57b4-4198-87e2-1ad968bd5e0c" />  
+<img width="367" height="101" alt="image" src="https://github.com/user-attachments/assets/1bb79386-ae2c-4df9-91ac-489941f59c42" />  
+salasana on "testi"
 
 
 
