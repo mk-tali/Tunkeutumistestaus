@@ -65,10 +65,11 @@ Ajoin komennon `./john ~/h5-Elokuu2026\!/JtR.hash`, mutta olibn väärässä hak
 <img width="367" height="193" alt="image" src="https://github.com/user-attachments/assets/91beaaf8-ff54-4f48-a28d-55830b94ddda" />  
 Tässä tuli virheeksi "No password hashes loaded (see FAQ)" Googlasin tuon ja löysin openwallin FAQ sivun, jossa oli sama kysymys kuin minulla. Tämän sivun ja Clauden avulla selvisi, että ongelmana on ilmeisesti hash tyyppi. `./configure` tulosteessa näkyi kohta "Generic crypt(3) format - no" ja John the Ripper tarvitsee sen, että pystyy käsittelemään Kalin käyttäjien salasanoja, jotka tallennetaan yescrypt hashina. (Openwall) Yritin lisätä Generic crypt(3) formatin seuraavien vaiheiden avulla. Asensin libcrypt-dev kirjaston `sudo apt-get install -y libcrypt-dev`. /john/src hakemistossa `make -s clean`. `./configure`. Generic crypt(3) format oli silti ... no.  
 <img width="655" height="235" alt="image" src="https://github.com/user-attachments/assets/8c2dc68b-d9d5-4797-9896-6a0d2c839cc7" />  
+Ajoin `make -sj4` komennon ja siirryin seuraavaan vaihtoehtoon.  
 Koska en saanut tuota lisättyä, päädyin muuttamaan JtR käyttäjän salasanan hashin SHA-512-crypt muotoon.  
 <img width="771" height="71" alt="image" src="https://github.com/user-attachments/assets/d3a88b62-c046-4668-85ea-51e1ae55c066" />  
 <img width="954" height="186" alt="image" src="https://github.com/user-attachments/assets/8e6505c5-8c4f-4669-8581-6d5dbd8bf9e6" />  
-Kuvissa näkyy vaiheet miten muutin hashin. 
+Kuvissa näkyy vaiheet miten muutin hashin `openssl` komennolla, vaihdoin sen JtR käyttäjälle `usermod` komennolla ja tallensin sen `unshadow` komennolla JtR.hash tiedostoon.  
 
 
 
