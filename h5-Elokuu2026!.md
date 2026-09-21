@@ -51,7 +51,7 @@ Muutin tero.zip tiedoston tero.zip.hash tiedostoksi. `/john/run/zip2john tero.zi
 <img width="946" height="230" alt="image" src="https://github.com/user-attachments/assets/cbaea3e1-3447-4e0f-bbd4-a1ace7737b12" />  
 Ajoin komennon `./john ../../tero.zip.hash`, jolla John murtaa hashin. Sain salasanaksi "butterfly"  
 <img width="798" height="269" alt="image" src="https://github.com/user-attachments/assets/50558e7b-cea4-41a2-a8ed-0a8beb6de488" />  
-Menin unzippaamaan ter.zip tiedoston ja annoin salasanaksi "butterfly". Salasana oli oikein.  
+Menin unzippaamaan tero.zip tiedoston ja annoin salasanaksi "butterfly". Salasana oli oikein.  
 <img width="367" height="96" alt="image" src="https://github.com/user-attachments/assets/a79413e9-3e93-4629-b82a-ced0055ed363" />  
 
 ## f) Tiiviste  
