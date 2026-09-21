@@ -55,10 +55,13 @@ Menin unzippaamaan ter.zip tiedoston ja annoin salasanaksi "butterfly". Salasana
 <img width="367" height="96" alt="image" src="https://github.com/user-attachments/assets/a79413e9-3e93-4629-b82a-ced0055ed363" />  
 
 ## f) Tiiviste  
-Loin käyttäjän "JtR".
+Loin käyttäjän "JtR".  
 <img width="357" height="69" alt="image" src="https://github.com/user-attachments/assets/cd36a7fd-57b4-4198-87e2-1ad968bd5e0c" />  
 Asetin salasanaksi "testi".  
 <img width="367" height="101" alt="image" src="https://github.com/user-attachments/assets/1bb79386-ae2c-4df9-91ac-489941f59c42" />  
+Ajoin komennon `sudo unshadow /etc/passwd /etc/shadow > ~/h5-Elokuu2026\!/JtR.hash`. Tämä yhdistää passwd:stä löytyvät käyttäjätunnukset shadow:sta löytyviin salasana hasheihin, että John the Ripper osaa yhdistää molemmista löytyvät tiedot käyttäjän salasanan murtamiseen.  
+<img width="868" height="65" alt="image" src="https://github.com/user-attachments/assets/5aebfac8-f8c8-4cdf-8bee-fd2bdabfb579" />  
+
 
 
 
