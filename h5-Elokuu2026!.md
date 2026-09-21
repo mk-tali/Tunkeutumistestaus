@@ -70,6 +70,9 @@ Koska en saanut tuota lisättyä, päädyin muuttamaan JtR käyttäjän salasana
 <img width="771" height="71" alt="image" src="https://github.com/user-attachments/assets/d3a88b62-c046-4668-85ea-51e1ae55c066" />  
 <img width="954" height="186" alt="image" src="https://github.com/user-attachments/assets/8e6505c5-8c4f-4669-8581-6d5dbd8bf9e6" />  
 Kuvissa näkyy vaiheet miten muutin hashin `openssl` komennolla, vaihdoin sen JtR käyttäjälle `usermod` komennolla ja tallensin sen `unshadow` komennolla JtR.hash tiedostoon.  
+Ajoin komennon `./john ~/h5-Elokuu2026\!/JtR.hash` ja nyt John the Ripper toimi kuten pitää. Oikea salasana käyttäjälle JtR löytyi.  
+<img width="767" height="298" alt="image" src="https://github.com/user-attachments/assets/33e075c4-6784-45ea-b4ba-f10c84931386" />
+
 
 
 
