@@ -73,6 +73,25 @@ Kuvissa näkyy vaiheet miten muutin hashin `openssl` komennolla, vaihdoin sen Jt
 Ajoin komennon `./john ~/h5-Elokuu2026\!/JtR.hash` ja nyt John the Ripper toimi kuten pitää. Oikea salasana käyttäjälle JtR löytyi.  
 <img width="767" height="298" alt="image" src="https://github.com/user-attachments/assets/33e075c4-6784-45ea-b4ba-f10c84931386" />
 
+## g) Sanakirja  
+Tein oman sanakirjan hashcatille. Loin nanolla tiedoston mihin laitoin esimerkki salasanoja.  
+<img width="301" height="55" alt="image" src="https://github.com/user-attachments/assets/43dd51a6-31c6-41ff-8f3b-de94f952ca32" />  
+<img width="265" height="230" alt="image" src="https://github.com/user-attachments/assets/e25eed93-ebc6-4580-9690-cb10aab07c68" />  
+Tarkistin, että tälläkin saa murrettua aikaisemmin luomani hashin.  
+<img width="945" height="373" alt="image" src="https://github.com/user-attachments/assets/803ad90f-e8dd-4426-988b-6c39ebf930d5" />  
+
+## h) Hash rules  
+Loin uuden salasanan jota ei ole luomassani sanakirjassa.  
+<img width="308" height="65" alt="image" src="https://github.com/user-attachments/assets/aa61a0c5-ec7e-430a-971c-71b2300976e3" />  
+Löysin hashcat säännöt täältä.  
+<img width="846" height="206" alt="image" src="https://github.com/user-attachments/assets/8421ffb0-6068-4d59-a6f1-46cc748843b4" />  
+Kokeilin ilman sääntöjä ja ei löytynyt salasanaa. --potfile-disable estää hashcatia muistamasta aiemmin murrettuja salasanoja, joten vaikka salasana on murrettu, sen pitäisi näkyä tässä.  
+<img width="667" height="69" alt="image" src="https://github.com/user-attachments/assets/9e16e6bf-4948-4171-93a3-987ebf2d890b" />  
+<img width="603" height="352" alt="image" src="https://github.com/user-attachments/assets/41b5d21d-891f-4277-94b0-ae72f5902218" />  
+Kokeilin seuraavaksi best66.rule kanssa, mutta sekään ei toiminut.  
+<img width="949" height="229" alt="image" src="https://github.com/user-attachments/assets/ca7adcc1-0817-49b0-8550-4e3cc83fad10" />  
+<img width="609" height="371" alt="image" src="https://github.com/user-attachments/assets/d5ab5a7c-b593-4aba-8658-276ded7b1376" />  
+
 
 
 
