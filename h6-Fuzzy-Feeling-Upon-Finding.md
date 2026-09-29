@@ -42,7 +42,7 @@ Kun luin seuraavia tehtäviä, oletin, että tämä oli oikea tulos.
 Tässä tehtävässä tarkoituksena on löytää kaksi kiinnostavaa koodia, jotka ei ole 200. 
 Kokeilin komentoa `ffuf -w content.txt -u https://ffuf.io.fi/FUZZ -mc all -fc 200` Tässä -mc näyttää kaikki koodit, ei vain ffufin oletustuloksia ja -fc saadaan filtteröityä pois koodit, mitä ei haluta. Sain tulokseksi.  
 <img width="744" height="518" alt="image" src="https://github.com/user-attachments/assets/bb8f2205-97ea-4a1a-81d1-4a8329a5e4e7" />  
-
+Tehtävänannossa lukee näin. "Two planted paths do not answer 200. One of them a default run will not even consider.", mutta molemmat, 301 ja 403 koodit näkyivät default ajossa. Oletan, että tarkoituksena oli löytää koodi 403 ja jokin toinen yksittäinen, mutta en sivun ohjeiden, enkä diaesityksen avulla keksinyt miten toisen saisi.  
 
 
 
