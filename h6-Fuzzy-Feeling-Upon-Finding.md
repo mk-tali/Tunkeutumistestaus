@@ -48,7 +48,7 @@ Tehtävänannossa lukee näin. "Two planted paths do not answer 200. One of them
 ## c3) Recursion  
 Tässä tehtävässä on tarkoituksena mennä syvemmälle tuloksiin rekursion avulla. Rekursion avulla ffuf menee löydettyihin hakemistoihin ja fuzzaa uudelleen niiden sisällä. Kokeilin aluksi laittaa ohjeissa näkyvät flagit perus ffuf komennon perään. Aloitin `recursion-depth 2` ja katsoin mitä tulee. `ffuf -w content.txt -u https://ffuf.io.fi/FUZZ -recursion -recursion-depth 2` ajoin tämän komennon ja huomasin, että tulostusta tuli niin suuri määrä, ettei sitä pysty käymään läpi niin lisäsin perään vielä -ac ja ajoin uudestaan.   
 Ensimmäisenä tästä osui silmään seuraava kohta.  
-<img width="843" height="73" alt="image" src="https://github.com/user-attachments/assets/16b232a1-cb80-43fb-bfeb-caeb28d15d5b" />  
+<img width="834" height="180" alt="image" src="https://github.com/user-attachments/assets/64a44c5d-18d5-40b2-9c79-0f01eca4e958" />  
 Ffuf löysi hakemiston, mutta recusrion-depth ei riittänyt. Asjoin seuraavaksi saman komennon ilman, että määrittelen syvyyttä, jolloin ffuf jatkaa niin syvälle kunnes kaikki on löydetty. `ffuf -w content.txt -u https://ffuf.io.fi/FUZZ -recursion -ac` Aikaisemman kohdan alta löytyi nyt vielä tämä kohta.  
 <img width="940" height="200" alt="image" src="https://github.com/user-attachments/assets/b5955da0-b390-446a-bdae-e8ffb7fc4ef5" />  
 
