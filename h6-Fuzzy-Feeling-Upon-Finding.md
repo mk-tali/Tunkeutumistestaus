@@ -15,7 +15,7 @@
 -Riskit ja mitigointi. Riskinä on, että ffuf menee väärään kohteeseen, joka on rikos. Siksi on tärkeää tarkistaa ennen jokaista ajoa, että kohde on kirjoitettu täysin oikein.  
 (Vault line)  
 
-## b) Asenn ffuf versio, joka tukee aivan uutta preflight-ominaisuutta  
+## b) Asenna ffuf versio, joka tukee aivan uutta preflight-ominaisuutta  
 Löysin GitHubista uusimman ffuf version 2.3.0, jonka tarvitsee näihin tehtäviin. Latasin sen komennoilla  
 `wget https://github.com/ffuf/ffuf/releases/download/v2.3.0/ffuf_2.3.0_linux_amd64.tar.gz`  
 `wget https://github.com/ffuf/ffuf/releases/download/v2.3.0/ffuf_2.3.0_checksums.txt`  
@@ -60,7 +60,7 @@ Ffuf löysi hakemiston, mutta recusrion-depth ei riittänyt. Asjoin seuraavaksi 
 (Vault line)  
 
 ## c4) Virtual hosts  
-Tässä tehtävässä tarkoituksena on läytää kolme ffuf.io,fi alla olevaa hostia.  
+Tässä tehtävässä tarkoituksena on läytää kolme ffuf.io.fi alla olevaa hostia.  
 Tässä fuzzataan host kohtaa, eikä URL:ia. Laitoin tehtävässä näkyvän -H flagin perus komennon perään. `ffuf -w content.txt -u https://ffuf.io.fi/ -H "Host: FUZZ.ffuf.io.fi"`  
 <img width="725" height="765" alt="image" src="https://github.com/user-attachments/assets/66248f2a-8f64-4d1a-bb22-c7c857572b1b" />  
 Tulosteesta tuli taas todella suuri, joten lisäsin -fw perään, jolla suodatin pois kaikki kohdat joissa oli 377 sanaa.  
