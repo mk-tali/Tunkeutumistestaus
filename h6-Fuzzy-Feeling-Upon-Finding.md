@@ -52,6 +52,7 @@ Ensimmäisenä tästä osui silmään seuraava kohta.
 Ffuf löysi hakemiston, mutta recusrion-depth ei riittänyt. Asjoin seuraavaksi saman komennon ilman, että määrittelen syvyyttä, jolloin ffuf jatkaa niin syvälle kunnes kaikki on löydetty. `ffuf -w content.txt -u https://ffuf.io.fi/FUZZ -recursion -ac` Aikaisemman kohdan alta löytyi nyt vielä tämä kohta.  
 <img width="940" height="200" alt="image" src="https://github.com/user-attachments/assets/b5955da0-b390-446a-bdae-e8ffb7fc4ef5" />  
 
+## c4) Virtual hosts  
 
 
 
