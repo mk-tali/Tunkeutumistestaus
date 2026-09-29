@@ -44,6 +44,8 @@ Kokeilin komentoa `ffuf -w content.txt -u https://ffuf.io.fi/FUZZ -mc all -fc 20
 <img width="744" height="518" alt="image" src="https://github.com/user-attachments/assets/bb8f2205-97ea-4a1a-81d1-4a8329a5e4e7" />  
 Tehtävänannossa lukee näin. "Two planted paths do not answer 200. One of them a default run will not even consider.", mutta molemmat, 301 ja 403 koodit näkyivät default ajossa. Oletan, että tarkoituksena oli löytää koodi 403 ja jokin toinen yksittäinen, mutta en sivun ohjeiden, enkä diaesityksen avulla keksinyt miten toisen saisi.  
 (Hoikkala 2026) (Vault line)  
+Jatkoin eteenpäin ja c4 tehtävän jälkeen palasin tähän.  
+
 
 ## c3) Recursion  
 Tässä tehtävässä on tarkoituksena mennä syvemmälle tuloksiin rekursion avulla. Rekursion avulla ffuf menee löydettyihin hakemistoihin ja fuzzaa uudelleen niiden sisällä. Kokeilin aluksi laittaa ohjeissa näkyvät flagit perus ffuf komennon perään. Aloitin `recursion-depth 2` ja katsoin mitä tulee. `ffuf -w content.txt -u https://ffuf.io.fi/FUZZ -recursion -recursion-depth 2` ajoin tämän komennon ja huomasin, että tulostusta tuli niin suuri määrä, ettei sitä pysty käymään läpi niin lisäsin perään vielä -ac ja ajoin uudestaan.   
@@ -53,7 +55,15 @@ Ffuf löysi hakemiston, mutta recusrion-depth ei riittänyt. Asjoin seuraavaksi 
 <img width="940" height="200" alt="image" src="https://github.com/user-attachments/assets/b5955da0-b390-446a-bdae-e8ffb7fc4ef5" />  
 
 ## c4) Virtual hosts  
-
+Tässä tehtävässä tarkoituksena on läytää kolme ffuf.io,fi alla olevaa hostia.  
+Tässä fuzzataan host kohtaa, eikä URL:ia. Laitoin tehtävässä näkyvän -H flagin perus komennon perään. `ffuf -w content.txt -u https://ffuf.io.fi/ -H "Host: FUZZ.ffuf.io.fi"`  
+<img width="725" height="765" alt="image" src="https://github.com/user-attachments/assets/66248f2a-8f64-4d1a-bb22-c7c857572b1b" />  
+Tulosteesta tuli taas todella suuri, joten lisäsin -fw perään, jolla suodatin pois kaikki kohdat joissa oli 377 sanaa.  
+<img width="751" height="468" alt="image" src="https://github.com/user-attachments/assets/0ecd3094-b80c-4423-b2f9-a67882802eb0" />  
+Tällä komennolla löytyi yksi.  
+Koska tässä ja c2 tehtävissä ei löytynyt tarpeeksi kohteita, ajattelin, että ehkä ongelmana on sanalistat. Muistin tunnilla maininnan seclists sanakirjasta ja löysin sen diaesityksestäkin. Latasin itselleni sen ja kokeilin tätä tehtävää uudestaan sen avulla. Ajoin komennon `ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt  -u https://ffuf.io.fi -H "Host: FUZZ.ffuf.io.fi" -fw 377`  
+Uudella sanakirjalla sain kaikki kolme näkyviin.  
+<img width="938" height="499" alt="image" src="https://github.com/user-attachments/assets/9e033f9d-b160-4a82-8951-590646e74d86" />  
 
 
 
