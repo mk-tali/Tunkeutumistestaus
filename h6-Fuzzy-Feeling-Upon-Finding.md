@@ -43,6 +43,15 @@ Tässä tehtävässä tarkoituksena on löytää kaksi kiinnostavaa koodia, jotk
 Kokeilin komentoa `ffuf -w content.txt -u https://ffuf.io.fi/FUZZ -mc all -fc 200` Tässä -mc näyttää kaikki koodit, ei vain ffufin oletustuloksia ja -fc saadaan filtteröityä pois koodit, mitä ei haluta. Sain tulokseksi.  
 <img width="744" height="518" alt="image" src="https://github.com/user-attachments/assets/bb8f2205-97ea-4a1a-81d1-4a8329a5e4e7" />  
 Tehtävänannossa lukee näin. "Two planted paths do not answer 200. One of them a default run will not even consider.", mutta molemmat, 301 ja 403 koodit näkyivät default ajossa. Oletan, että tarkoituksena oli löytää koodi 403 ja jokin toinen yksittäinen, mutta en sivun ohjeiden, enkä diaesityksen avulla keksinyt miten toisen saisi.  
+(Hoikkala 2026) (Vault line)  
+
+## c3) Recursion  
+Tässä tehtävässä on tarkoituksena mennä syvemmälle tuloksiin rekursion avulla. Rekursion avulla ffuf menee löydettyihin hakemistoihin ja fuzzaa uudelleen niiden sisällä. Kokeilin aluksi laittaa ohjeissa näkyvät flagit perus ffuf komennon perään. Aloitin `recursion-depth 2` ja katsoin mitä tulee. `ffuf -w content.txt -u https://ffuf.io.fi/FUZZ -recursion -recursion-depth 2` ajoin tämän komennon ja huomasin, että tulostusta tuli niin suuri määrä, ettei sitä pysty käymään läpi niin lisäsin perään vielä -ac ja ajoin uudestaan.   
+Ensimmäisenä tästä osui silmään seuraava kohta.  
+<img width="843" height="73" alt="image" src="https://github.com/user-attachments/assets/16b232a1-cb80-43fb-bfeb-caeb28d15d5b" />  
+Ffuf löysi hakemiston, mutta recusrion-depth ei riittänyt. Asjoin seuraavaksi saman komennon ilman, että määrittelen syvyyttä, jolloin ffuf jatkaa niin syvälle kunnes kaikki on löydetty. `ffuf -w content.txt -u https://ffuf.io.fi/FUZZ -recursion -ac` 
+
+
 
 
 
