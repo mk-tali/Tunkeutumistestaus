@@ -57,6 +57,7 @@ Ensimmäisenä tästä osui silmään seuraava kohta.
 <img width="834" height="180" alt="image" src="https://github.com/user-attachments/assets/64a44c5d-18d5-40b2-9c79-0f01eca4e958" />  
 Ffuf löysi hakemiston, mutta recusrion-depth ei riittänyt. Asjoin seuraavaksi saman komennon ilman, että määrittelen syvyyttä, jolloin ffuf jatkaa niin syvälle kunnes kaikki on löydetty. `ffuf -w content.txt -u https://ffuf.io.fi/FUZZ -recursion -ac` Aikaisemman kohdan alta löytyi nyt vielä tämä kohta.  
 <img width="940" height="200" alt="image" src="https://github.com/user-attachments/assets/b5955da0-b390-446a-bdae-e8ffb7fc4ef5" />  
+(Vault line)  
 
 ## c4) Virtual hosts  
 Tässä tehtävässä tarkoituksena on läytää kolme ffuf.io,fi alla olevaa hostia.  
@@ -68,9 +69,14 @@ Tällä komennolla löytyi yksi.
 Koska tässä ja c2 tehtävissä ei löytynyt tarpeeksi kohteita, ajattelin, että ehkä ongelmana on sanakirjat. Muistin tunnilla maininnan seclists sanakirjasta ja löysin sen diaesityksestäkin. Latasin itselleni sen ja kokeilin tätä tehtävää uudestaan sen avulla. Ajoin komennon `ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt  -u https://ffuf.io.fi -H "Host: FUZZ.ffuf.io.fi" -fw 377`  
 Uudella sanakirjalla sain kaikki kolme näkyviin.  
 <img width="938" height="499" alt="image" src="https://github.com/user-attachments/assets/9e033f9d-b160-4a82-8951-590646e74d86" />  
+(Vault line)  
 
-
-
+## c9) The login you cannot replay  
+Seurasin tässä tehtävässä sivulta löytyvää ohjetta.  
+<img width="251" height="128" alt="image" src="https://github.com/user-attachments/assets/64a0c315-c9a4-48ad-8e9b-e1debdcdb833" />  
+<img width="744" height="544" alt="image" src="https://github.com/user-attachments/assets/0dc4720f-e456-4c57-abe5-53c41bc115bb" />  
+Komento toimi oikein ja löysi salasanan "vaultline2026".  
+(Vault line)  
 
 ## Lähteet  
 Karvinen Tero. 2026. Tunkeutumistestaus. https://terokarvinen.com/tunkeutumistestaus/  
